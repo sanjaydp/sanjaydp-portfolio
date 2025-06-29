@@ -19,7 +19,7 @@ const Hero = () => {
           {/* Description */}
           <div className="animate-slide-up mb-8">
             <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-              I design and build scalable data pipelines, cloud data solutions, and analytics platforms. Passionate about transforming raw data into actionable insights and driving business value through automation, cloud, and machine learning.
+              With 3+ years of experience, I design and build scalable data pipelines, cloud data solutions, and analytics platforms. Passionate about transforming raw data into actionable insights and driving business value through automation, cloud, and machine learning.
             </p>
           </div>
 
