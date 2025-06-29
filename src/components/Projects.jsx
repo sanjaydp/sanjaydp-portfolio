@@ -7,77 +7,80 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, product management, shopping cart, and payment integration.',
+      title: 'Real-time Data Pipeline',
+      description: 'Built a real-time data processing pipeline using Apache Kafka, Spark Streaming, and Apache Airflow. Processes 10M+ events daily with sub-second latency for real-time analytics dashboard.',
       image: '/api/placeholder/600/400',
-      category: 'fullstack',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'Stripe'],
-      github: 'https://github.com/yourusername/ecommerce-platform',
-      live: 'https://ecommerce-platform.vercel.app',
+      category: 'streaming',
+      technologies: ['Apache Kafka', 'Apache Spark', 'Apache Airflow', 'Python', 'AWS'],
+      github: 'https://github.com/yourusername/realtime-pipeline',
+      live: 'https://pipeline-demo.vercel.app',
       featured: true
     },
     {
       id: 2,
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
+      title: 'Data Warehouse Migration',
+      description: 'Migrated legacy data warehouse to Snowflake with automated ETL pipelines. Improved query performance by 300% and reduced data processing time by 60%.',
       image: '/api/placeholder/600/400',
-      category: 'frontend',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Firebase'],
-      github: 'https://github.com/yourusername/task-manager',
-      live: 'https://task-manager.vercel.app',
+      category: 'etl',
+      technologies: ['Snowflake', 'Apache Airflow', 'Python', 'dbt', 'Terraform'],
+      github: 'https://github.com/yourusername/warehouse-migration',
+      live: 'https://migration-demo.vercel.app',
       featured: true
     },
     {
       id: 3,
-      title: 'Weather Dashboard',
-      description: 'A weather application that displays current weather and forecasts using OpenWeatherMap API with beautiful visualizations.',
+      title: 'Customer Analytics Platform',
+      description: 'Developed a comprehensive customer analytics platform that processes customer behavior data from multiple sources and provides actionable insights through interactive dashboards.',
       image: '/api/placeholder/600/400',
-      category: 'frontend',
-      technologies: ['React', 'JavaScript', 'CSS3', 'Chart.js'],
-      github: 'https://github.com/yourusername/weather-app',
-      live: 'https://weather-dashboard.vercel.app',
+      category: 'analytics',
+      technologies: ['Apache Spark', 'PostgreSQL', 'Python', 'Tableau', 'Docker'],
+      github: 'https://github.com/yourusername/customer-analytics',
+      live: 'https://analytics-demo.vercel.app',
       featured: false
     },
     {
       id: 4,
-      title: 'Blog API',
-      description: 'A RESTful API for a blogging platform with user authentication, CRUD operations, and file upload functionality.',
+      title: 'Data Quality Framework',
+      description: 'Implemented a comprehensive data quality framework with automated testing, monitoring, and alerting. Ensures 99.9% data accuracy across all pipelines.',
       image: '/api/placeholder/600/400',
-      category: 'backend',
-      technologies: ['Node.js', 'Express', 'PostgreSQL', 'JWT', 'Multer'],
-      github: 'https://github.com/yourusername/blog-api',
-      live: 'https://blog-api.herokuapp.com',
+      category: 'quality',
+      technologies: ['Great Expectations', 'Apache Airflow', 'Python', 'Grafana', 'Slack'],
+      github: 'https://github.com/yourusername/data-quality',
+      live: 'https://quality-demo.vercel.app',
       featured: false
     },
     {
       id: 5,
-      title: 'Portfolio Website',
-      description: 'A modern, responsive portfolio website built with React and Tailwind CSS, featuring dark mode and smooth animations.',
+      title: 'ML Feature Store',
+      description: 'Built a feature store for machine learning models using Redis and PostgreSQL. Enables real-time feature serving and offline feature engineering for ML pipelines.',
       image: '/api/placeholder/600/400',
-      category: 'frontend',
-      technologies: ['React', 'Tailwind CSS', 'Vite', 'React Icons'],
-      github: 'https://github.com/yourusername/portfolio',
-      live: 'https://portfolio.vercel.app',
+      category: 'ml',
+      technologies: ['Redis', 'PostgreSQL', 'Python', 'FastAPI', 'Docker'],
+      github: 'https://github.com/yourusername/feature-store',
+      live: 'https://featurestore-demo.vercel.app',
       featured: false
     },
     {
       id: 6,
-      title: 'Chat Application',
-      description: 'Real-time chat application with user authentication, private messaging, and file sharing capabilities.',
+      title: 'Data Lake Architecture',
+      description: 'Designed and implemented a data lake architecture on AWS S3 with Apache Hudi for ACID transactions. Supports both batch and streaming data processing.',
       image: '/api/placeholder/600/400',
-      category: 'fullstack',
-      technologies: ['React', 'Socket.io', 'Node.js', 'MongoDB'],
-      github: 'https://github.com/yourusername/chat-app',
-      live: 'https://chat-app.vercel.app',
+      category: 'infrastructure',
+      technologies: ['AWS S3', 'Apache Hudi', 'Apache Spark', 'Terraform', 'Python'],
+      github: 'https://github.com/yourusername/data-lake',
+      live: 'https://datalake-demo.vercel.app',
       featured: false
     }
   ]
 
   const filters = [
     { id: 'all', name: 'All Projects' },
-    { id: 'frontend', name: 'Frontend' },
-    { id: 'backend', name: 'Backend' },
-    { id: 'fullstack', name: 'Full Stack' }
+    { id: 'streaming', name: 'Streaming' },
+    { id: 'etl', name: 'ETL' },
+    { id: 'analytics', name: 'Analytics' },
+    { id: 'quality', name: 'Data Quality' },
+    { id: 'ml', name: 'ML/MLOps' },
+    { id: 'infrastructure', name: 'Infrastructure' }
   ]
 
   const filteredProjects = activeFilter === 'all' 
@@ -92,7 +95,7 @@ const Projects = () => {
             My Projects
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Here are some of the projects I've worked on. Each one represents a unique challenge and learning experience.
+            Here are some of the data engineering projects I've worked on. Each one represents a unique challenge in data processing and infrastructure.
           </p>
         </div>
 
@@ -186,7 +189,7 @@ const Projects = () => {
                     className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
                   >
                     <FiExternalLink className="w-4 h-4" />
-                    <span>Live Demo</span>
+                    <span>Demo</span>
                   </a>
                 </div>
               </div>

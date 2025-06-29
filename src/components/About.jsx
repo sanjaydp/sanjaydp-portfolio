@@ -3,30 +3,30 @@ import { FiCode, FiDatabase, FiGlobe, FiSmartphone } from 'react-icons/fi'
 
 const About = () => {
   const skills = {
-    frontend: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'JavaScript', 'HTML/CSS'],
-    backend: ['Node.js', 'Express', 'Python', 'Django', 'PostgreSQL', 'MongoDB'],
-    tools: ['Git', 'Docker', 'AWS', 'Vercel', 'Figma', 'Postman'],
-    other: ['REST APIs', 'GraphQL', 'Testing', 'CI/CD', 'Agile', 'Scrum']
+    languages: ['Python', 'SQL', 'Scala', 'Java', 'JavaScript', 'Bash'],
+    bigData: ['Apache Spark', 'Apache Kafka', 'Apache Airflow', 'Hadoop', 'Hive', 'Presto'],
+    cloud: ['AWS', 'Azure', 'GCP', 'Snowflake', 'Databricks', 'Redshift'],
+    tools: ['Git', 'Docker', 'Kubernetes', 'Terraform', 'Jenkins', 'Jupyter']
   }
 
   const experiences = [
     {
-      title: 'Full Stack Developer',
+      title: 'Senior Data Engineer',
       company: 'Tech Company',
       period: '2022 - Present',
-      description: 'Building scalable web applications using React, Node.js, and cloud technologies.'
+      description: 'Building scalable data pipelines using Apache Spark, Airflow, and cloud technologies. Implementing data governance and quality frameworks.'
     },
     {
-      title: 'Frontend Developer',
-      company: 'Startup',
+      title: 'Data Engineer',
+      company: 'Data Analytics Firm',
       period: '2021 - 2022',
-      description: 'Developed responsive user interfaces and improved user experience.'
+      description: 'Developed ETL pipelines and data warehouses. Optimized query performance and implemented data quality checks.'
     },
     {
-      title: 'Junior Developer',
-      company: 'Digital Agency',
+      title: 'Junior Data Engineer',
+      company: 'E-commerce Platform',
       period: '2020 - 2021',
-      description: 'Worked on various client projects using modern web technologies.'
+      description: 'Built data pipelines for customer analytics and business intelligence. Worked with real-time streaming data.'
     }
   ]
 
@@ -38,7 +38,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Passionate developer with a love for creating innovative solutions
+            Data engineer passionate about building robust data infrastructure and pipelines
           </p>
         </div>
 
@@ -50,16 +50,16 @@ const About = () => {
             </h3>
             <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
               <p>
-                I'm a passionate Full Stack Developer with over 3 years of experience building 
-                modern web applications. I love turning complex problems into simple, beautiful solutions.
+                I'm a passionate Data Engineer with over 3 years of experience building scalable data infrastructure 
+                and ETL pipelines. I specialize in transforming complex data challenges into efficient, reliable solutions.
               </p>
               <p>
-                When I'm not coding, you can find me exploring new technologies, contributing to 
-                open-source projects, or sharing knowledge with the developer community.
+                My expertise lies in designing and implementing data pipelines that process millions of records daily, 
+                ensuring data quality, and building robust data warehouses that enable data-driven decision making.
               </p>
               <p>
-                I believe in writing clean, maintainable code and creating user experiences that 
-                make a difference. Every project is an opportunity to learn and grow.
+                I believe in writing clean, maintainable code and creating data solutions that scale with business growth. 
+                Every data pipeline is an opportunity to optimize performance and improve data accessibility.
               </p>
             </div>
 
@@ -102,10 +102,10 @@ const About = () => {
               <div className="card p-6">
                 <div className="flex items-center mb-4">
                   <FiCode className="w-5 h-5 text-primary-600 dark:text-primary-400 mr-3" />
-                  <h4 className="font-semibold text-gray-900 dark:text-white">Frontend</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white">Programming Languages</h4>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  {skills.frontend.map((skill, index) => (
+                  {skills.languages.map((skill, index) => (
                     <span
                       key={index}
                       className="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium"
@@ -119,10 +119,10 @@ const About = () => {
               <div className="card p-6">
                 <div className="flex items-center mb-4">
                   <FiDatabase className="w-5 h-5 text-primary-600 dark:text-primary-400 mr-3" />
-                  <h4 className="font-semibold text-gray-900 dark:text-white">Backend</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white">Big Data & Processing</h4>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  {skills.backend.map((skill, index) => (
+                  {skills.bigData.map((skill, index) => (
                     <span
                       key={index}
                       className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-sm font-medium"
@@ -136,10 +136,10 @@ const About = () => {
               <div className="card p-6">
                 <div className="flex items-center mb-4">
                   <FiGlobe className="w-5 h-5 text-primary-600 dark:text-primary-400 mr-3" />
-                  <h4 className="font-semibold text-gray-900 dark:text-white">Tools & Platforms</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white">Cloud & Platforms</h4>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  {skills.tools.map((skill, index) => (
+                  {skills.cloud.map((skill, index) => (
                     <span
                       key={index}
                       className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-full text-sm font-medium"
@@ -153,10 +153,10 @@ const About = () => {
               <div className="card p-6">
                 <div className="flex items-center mb-4">
                   <FiSmartphone className="w-5 h-5 text-primary-600 dark:text-primary-400 mr-3" />
-                  <h4 className="font-semibold text-gray-900 dark:text-white">Other Skills</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white">Tools & DevOps</h4>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  {skills.other.map((skill, index) => (
+                  {skills.tools.map((skill, index) => (
                     <span
                       key={index}
                       className="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300 rounded-full text-sm font-medium"

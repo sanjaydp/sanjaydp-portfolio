@@ -32,15 +32,15 @@ const Hero = () => {
               Sanjay DP
             </h1>
             <h2 className="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 font-medium">
-              Full Stack Developer
+              Data Engineer
             </h2>
           </div>
 
           {/* Description */}
           <div className="animate-slide-up mb-8">
             <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-              I build modern, scalable web applications with cutting-edge technologies. 
-              Passionate about creating exceptional user experiences and solving complex problems.
+              I build scalable data pipelines and infrastructure that transform raw data into actionable insights. 
+              Passionate about creating efficient ETL processes and data solutions that drive business decisions.
             </p>
           </div>
 
