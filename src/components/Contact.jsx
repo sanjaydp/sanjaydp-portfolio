@@ -38,19 +38,19 @@ const Contact = () => {
     {
       icon: FiMail,
       title: 'Email',
-      value: 'sanjay.dp@example.com',
-      link: 'mailto:sanjay.dp@example.com'
+      value: 'sdada004@fiu.edu',
+      link: 'mailto:sdada004@fiu.edu'
     },
     {
       icon: FiPhone,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      value: '+1 786-784-9890',
+      link: 'tel:+17867849890'
     },
     {
       icon: FiMapPin,
       title: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Miami, Florida',
       link: null
     }
   ]
