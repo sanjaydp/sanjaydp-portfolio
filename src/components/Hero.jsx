@@ -12,7 +12,7 @@ const Hero = () => {
               Sanjay Dadadahalalli Prasanna Kumar
             </h1>
             <h2 className="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 font-medium">
-              Data Engineer / Graduate Research Assistant
+              Data Engineer
             </h2>
           </div>
 
