@@ -26,13 +26,25 @@ const Projects = () => {
       github: 'https://github.com/sanjaydp/driver-allocation',
       live: 'https://driver-allocation-demo.vercel.app',
       featured: true
+    },
+    {
+      id: 3,
+      title: 'SQL Optimizer Assistant (OptiQuery)',
+      description: 'AI-powered SQL query optimization tool that analyzes, optimizes, and improves SQL query performance using OpenAI GPT. Features natural language to SQL conversion, benchmarking, security analysis, and comprehensive query reports.',
+      image: '/api/placeholder/600/400',
+      category: 'ai',
+      technologies: ['Python', 'Streamlit', 'OpenAI GPT', 'SQLite', 'PostgreSQL', 'SQL'],
+      github: 'https://github.com/sanjaydp/OptiQuery',
+      live: 'https://optiquery-demo.vercel.app',
+      featured: true
     }
   ]
 
   const filters = [
     { id: 'all', name: 'All Projects' },
     { id: 'streaming', name: 'Streaming' },
-    { id: 'optimization', name: 'Optimization' }
+    { id: 'optimization', name: 'Optimization' },
+    { id: 'ai', name: 'AI/ML' }
   ]
 
   const filteredProjects = activeFilter === 'all' 
