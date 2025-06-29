@@ -7,80 +7,32 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Real-time Data Pipeline',
-      description: 'Built a real-time data processing pipeline using Apache Kafka, Spark Streaming, and Apache Airflow. Processes 10M+ events daily with sub-second latency for real-time analytics dashboard.',
+      title: 'Real-time Data Pipeline with Apache Kafka',
+      description: 'Designed and implemented a real-time data processing pipeline using Apache Kafka, Spark Streaming, and Apache Airflow. Processes 10M+ events daily with sub-second latency for real-time analytics dashboard.',
       image: '/api/placeholder/600/400',
       category: 'streaming',
       technologies: ['Apache Kafka', 'Apache Spark', 'Apache Airflow', 'Python', 'AWS'],
-      github: 'https://github.com/yourusername/realtime-pipeline',
+      github: 'https://github.com/sanjaydp/realtime-pipeline',
       live: 'https://pipeline-demo.vercel.app',
       featured: true
     },
     {
       id: 2,
-      title: 'Data Warehouse Migration',
-      description: 'Migrated legacy data warehouse to Snowflake with automated ETL pipelines. Improved query performance by 300% and reduced data processing time by 60%.',
+      title: 'Driver Allocation Optimization',
+      description: 'Developed an intelligent driver allocation system using machine learning algorithms to optimize fleet operations. Reduced delivery times by 25% and improved resource utilization by 30%.',
       image: '/api/placeholder/600/400',
-      category: 'etl',
-      technologies: ['Snowflake', 'Apache Airflow', 'Python', 'dbt', 'Terraform'],
-      github: 'https://github.com/yourusername/warehouse-migration',
-      live: 'https://migration-demo.vercel.app',
+      category: 'optimization',
+      technologies: ['Python', 'Machine Learning', 'PostgreSQL', 'Apache Spark', 'Docker'],
+      github: 'https://github.com/sanjaydp/driver-allocation',
+      live: 'https://driver-allocation-demo.vercel.app',
       featured: true
-    },
-    {
-      id: 3,
-      title: 'Customer Analytics Platform',
-      description: 'Developed a comprehensive customer analytics platform that processes customer behavior data from multiple sources and provides actionable insights through interactive dashboards.',
-      image: '/api/placeholder/600/400',
-      category: 'analytics',
-      technologies: ['Apache Spark', 'PostgreSQL', 'Python', 'Tableau', 'Docker'],
-      github: 'https://github.com/yourusername/customer-analytics',
-      live: 'https://analytics-demo.vercel.app',
-      featured: false
-    },
-    {
-      id: 4,
-      title: 'Data Quality Framework',
-      description: 'Implemented a comprehensive data quality framework with automated testing, monitoring, and alerting. Ensures 99.9% data accuracy across all pipelines.',
-      image: '/api/placeholder/600/400',
-      category: 'quality',
-      technologies: ['Great Expectations', 'Apache Airflow', 'Python', 'Grafana', 'Slack'],
-      github: 'https://github.com/yourusername/data-quality',
-      live: 'https://quality-demo.vercel.app',
-      featured: false
-    },
-    {
-      id: 5,
-      title: 'ML Feature Store',
-      description: 'Built a feature store for machine learning models using Redis and PostgreSQL. Enables real-time feature serving and offline feature engineering for ML pipelines.',
-      image: '/api/placeholder/600/400',
-      category: 'ml',
-      technologies: ['Redis', 'PostgreSQL', 'Python', 'FastAPI', 'Docker'],
-      github: 'https://github.com/yourusername/feature-store',
-      live: 'https://featurestore-demo.vercel.app',
-      featured: false
-    },
-    {
-      id: 6,
-      title: 'Data Lake Architecture',
-      description: 'Designed and implemented a data lake architecture on AWS S3 with Apache Hudi for ACID transactions. Supports both batch and streaming data processing.',
-      image: '/api/placeholder/600/400',
-      category: 'infrastructure',
-      technologies: ['AWS S3', 'Apache Hudi', 'Apache Spark', 'Terraform', 'Python'],
-      github: 'https://github.com/yourusername/data-lake',
-      live: 'https://datalake-demo.vercel.app',
-      featured: false
     }
   ]
 
   const filters = [
     { id: 'all', name: 'All Projects' },
     { id: 'streaming', name: 'Streaming' },
-    { id: 'etl', name: 'ETL' },
-    { id: 'analytics', name: 'Analytics' },
-    { id: 'quality', name: 'Data Quality' },
-    { id: 'ml', name: 'ML/MLOps' },
-    { id: 'infrastructure', name: 'Infrastructure' }
+    { id: 'optimization', name: 'Optimization' }
   ]
 
   const filteredProjects = activeFilter === 'all' 
@@ -200,7 +152,7 @@ const Projects = () => {
         {/* View More Projects */}
         <div className="text-center mt-12">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/sanjaydp"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary inline-flex items-center space-x-2"
