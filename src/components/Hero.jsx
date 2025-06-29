@@ -9,7 +9,7 @@ const Hero = () => {
           {/* Name */}
           <div className="animate-slide-up mb-6">
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-4">
-              Sanjay Dadadahalalli Prasanna Kumar
+              Sanjay Dadadahalli Prasanna Kumar
             </h1>
             <h2 className="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 font-medium">
               Data Engineer
