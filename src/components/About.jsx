@@ -1,9 +1,9 @@
 import React from 'react'
 
 const skills = {
-  languages: ['Python', 'C++', 'C', 'SQL'],
+  languages: ['Python', 'SQL'],
   bigData: ['Apache Spark', 'Hadoop', 'MapReduce', 'Kafka'],
-  cloud: ['AWS', 'Azure', 'GCP'],
+  cloud: ['AWS', 'Azure'],
   tools: ['PostgreSQL', 'MySQL', 'NoSQL', 'Docker', 'Kubernetes', 'Terraform', 'Git', 'Power BI', 'Microsoft Excel', 'Microsoft Office', 'Unix/Linux', 'Windows', 'OOP', 'Agile (Scrum)', 'SDLC']
 }
 
