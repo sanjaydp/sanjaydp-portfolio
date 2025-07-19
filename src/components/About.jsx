@@ -31,6 +31,13 @@ const experiences = [
 const About = () => (
   <section id="about" className="section-padding bg-gray-50 dark:bg-dark-800">
     <div className="container-custom">
+      <div className="flex justify-center mb-8">
+        <img
+          src="/photosanjay.jpeg"
+          alt="Sanjay's Profile"
+          className="w-44 h-44 rounded-full object-cover border-4 border-primary-500 shadow-lg"
+        />
+      </div>
       <div className="text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
           About Me
@@ -42,13 +49,6 @@ const About = () => (
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         {/* Bio Section */}
         <div className="space-y-6">
-          <div className="flex justify-center mb-6">
-            <img
-              src="/photosanjay.jpeg"
-              alt="Sanjay's Profile"
-              className="w-44 h-44 rounded-full object-cover border-4 border-primary-500 shadow-lg"
-            />
-          </div>
           <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
             Who I Am
           </h3>
