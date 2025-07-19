@@ -35,7 +35,7 @@ const About = () => (
         <img
           src="/photosanjay.jpeg"
           alt="Sanjay's Profile"
-          className="w-44 h-44 rounded-full object-cover border-4 border-primary-500 shadow-lg"
+          className="w-56 h-56 rounded-full object-cover border-4 border-primary-500 shadow-lg"
         />
       </div>
       <div className="text-center mb-16">
