@@ -42,6 +42,13 @@ const About = () => (
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         {/* Bio Section */}
         <div className="space-y-6">
+          <div className="flex justify-center mb-6">
+            <img
+              src="/photosanjay.jpeg"
+              alt="Sanjay's Profile"
+              className="w-32 h-32 rounded-full object-cover border-4 border-primary-500 shadow-lg"
+            />
+          </div>
           <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
             Who I Am
           </h3>
