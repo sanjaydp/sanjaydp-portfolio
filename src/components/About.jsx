@@ -9,22 +9,22 @@ const skills = {
 
 const experiences = [
   {
-    title: 'Graduate Research Assistant',
+    title: 'Data Engineer (GRA)',
     company: 'Florida International University',
     period: 'Sep 2024 – Present',
-    description: 'Build and maintain automated ETL pipelines using Python and Pandas to clean, transform, and aggregate over 500,000+ rows of sensor data collected from embedded systems. Developed a Streamlit-based real-time interface integrated with Flask APIs to monitor and control live microcontroller data across 10+ devices, enabling real-time data ingestion and ML inference. Deployed AWS Lambda and S3 for real-time data ingestion and ML inference, cutting report generation time from 20 minutes to under 2 minutes.'
+    description: 'Developed and deployed end-to-end data pipelines using AWS Glue, Lambda, S3, EMR, supporting sensor telemetry processing  from ESP32/MPU6050 devices, improving real-time analytics availability by 40%. Automated ingestion, cleansing, and transformation of thermal imaging and environmental datasets using Python and SQL, reducing manual preprocessing time by 60%. Integrated PostgreSQL with dashboard tools for live research reporting, enhancing anomaly detection workflows in power electronics and energy systems.'
   },
   {
     title: 'Senior Data Engineer',
     company: 'Brillio Technologies Pvt Ltd',
     period: 'Nov 2021 – Jul 2024',
-    description: 'Built scalable royalty application for a leading music corporation, fully orchestrated on AWS to maximize data accessibility for over 1 million artists worldwide. Spearheaded the development of an event-driven data platform using AWS Lambda and Step Functions for real-time processing of royalty statements. Implemented a data validation microservice using Great Expectations, optimizing memory utilization by 40% and improving data integrity. Designed an automated mechanism to synchronize downstream low-latency databases (Aurora) and real-time search (Redshift). Optimized Redshift query performance by 35% through table redesign, use of sort/dist keys, and workload management tuning.'
+    description: 'Built a scalable global royalty platform serving 1M+ artists, increasing data pipeline availability by 30% using AWS Glue, Step Functions, Lambda, SQL stored procedures, and Airflow Achieved 75% faster statement generation by creating event-driven ingestion workflows using S3 triggers and serverless orchestration. Engineered a microservice with Great Expectations for data validation, reducing cluster memory usage by 40% and improving data quality metrics. Led the sync pipeline between Amazon Aurora and Redshift, improving query responsiveness by 50% for downstream analytics teams. Supported stakeholders across finance/legal departments via interactive Power BI dashboards, increasing revenue insight efficiency by 20%.'
   },
   {
     title: 'Associate Professional Software Engineer',
     company: 'DXC Technologies Pvt Ltd',
     period: 'Jun 2021 – Nov 2021',
-    description: 'Refactored legacy COBOL-based ETL workflows into Python- and SQL-based batch pipelines, improving maintainability and reducing processing time by 80%. Relocated data integration and transformation logic for financial systems, increasing system uptime to 99.9% and ensuring high availability for customer-facing reporting dashboards.'
+    description: 'Built and supported ETL pipelines using AWS Glue, Lambda, and Step Functions, ingesting 2M+ daily records from APIs, S3, and PostgreSQL. Automated job scheduling, transformation logic, and pipeline failure alerting using Airflow and CloudWatch, reducing data downtime by 35%.'
   }
 ]
 
